@@ -1,13 +1,18 @@
 :root {
-	--bg-color: #082020;
-	--main-fg-color: #aeeeae;
+	--bg-color: #deeede;
+	--main-fg-color: #222222;
 	--faint-fg-color: #80bf9f;
-	--subtle-highlight-fg: #997866;
+	--subtle-highlight-fg:#222222; 
 
 	--link-color: #637dc5;
-	--hovered-link-color: #849fff;
-	--visited-link-color: #995599;
+	--hovered-link-color: #246fda;
+	--visited-link-color: #e950a9;
 	--void: #242424;
+}
+
+.icon {
+	width: 32px; height: 32px;
+	fill: var(--subtle-highlight-fg);
 }
 
 body {
@@ -24,6 +29,10 @@ body {
 
 header * {
 	margin: 0;
+}
+
+div.project {
+	background-color: 
 }
 
 
