@@ -67,59 +67,114 @@
             </div>
             <div id="projects">
                 <h2>Projects</h2>
+                <p>
+                    I have created a lot of projects on my own, most of them can be seen on my <a href="https://github.com/manschloemark">github</a>.<br>
+                    Here I list a few but I plan to add more once I have the time.<br>
+                    I have the most experience with Python at this point, with JavaScript at second place.<br>
+                </p>
                 <div class="project">
-                    <h3>Glitch Art Tools</h3>
-                    <div class="made-with">
-                        <svg class="icon"><use href="#python"></use></svg>
-                        <svg class="icon qt"><use href="#qt"></use></svg>
+                    <div class="info">
+                        <h3>Glitch Art Tools</h3>
+                        <div class="made-with">
+                            <svg class="icon"><use href="#python"></use></svg>
+                            <svg class="icon qt"><use href="#qt"></use></svg>
+                        </div>
+                        <a href="https://github.com/manschloemark/glitchart-tools">View Repo</a>
                     </div>
-                    <a href="https://github.com/manschloemark/glitchart-tools">View Repo</a>
                     <p class="description">
-                    I really like <a href="https://en.wikipedia.org/wiki/Glitch_art">glitch art</a>.<br>
+                    Various python scripts for creating <a href="https://en.wikipedia.org/wiki/Glitch_art">glitch art</a> images.<br>
+                    I also created a GUI using Qt which makes it easy to use.<br>
+                    <!--I really like <a href="https://en.wikipedia.org/wiki/Glitch_art">glitch art</a>.<br>
                     I think it looks cool and I love the idea of making something beautiful by using data the wrong way.<br>
                     That's why I made this program where I implement ways of messing with images.<br>
                     So far, I admit, I don't have any real gltiches - just different ways of messing with images so that they look kind of 'glitchy'.
+                    -->
                     </p>
                     <dl class="features">
+                        <h4>Features</h4>
                         <dt>Pixel Sorting</dt>
                         <dd>I wanted to learn more about Python generators so I wrote a pixel sorting script using nothing but generators to iterate through an image's pixels. It made for a fun project and the results can be pretty neat.</dd>
                         <dt>Swizzling</dt>
                         <dd>I don't know if swizzling is the proper term, but this feature basically lets you reroute the bands of an RGB image. Say you want to map red pixels to blue lights, and blue to red. It's a simple glitch that can make for cool color swaps.</dd>
                         <dt>Line Offsets</dt>
-                        <dd>You can wrap an image around the edges or make it all wobbly. It's pretty amusing.</dd>
+                        <dd>You can wrap an image around the edges by a constant amount or make it wavy by using sine/cosine to move lines.</dd>
                         <dt>Qt GUI</dt>
                         <dd>I used PySide to make a GUI for these tools. I wrote some custom widgets for viewing and editing the images.</dd>
                     </dl>
                     <div class="examples">
+                        <figure>
                         <img src="./images/banquet.jpg" alt="Rene Magritte's painting \"The Banquet\""></img>
+                        <figcaption>Rene Magritte's work 'The Banquet' which I use to demonstrate the program's features</figcaption>
+                        </figure>
+                        <figure>
                         <img src="./images/banquet_pixelsort.jpg" alt="The Banquet with a pixelsort applied to it."></img>
+                        <figcaption>A diagonal pixel sort applied to the image</figcaption>
+                        </figure>
+                        <figure>
                         <img src="./images/banquet_swizzle.jpg" alt="The banquet with the green and blue channels swapped."></img>
+                        <figcaption>The green and blue channels swapped</figcaption>
+                        </figure>
+                        <figure>
                         <img src="./images/banquet_offset.jpg" alt="The Banquet with lines offset by using the sine function."></img>
+                        <figcaption>Making the image wavy by offsetting lines by a trig function</figcaption>
+                        </figure>
+                        <figure>
                         <img src="./images/banquet_aura_offset.jpg" alt="The Banquet with lines offset faded on top of the original image"></img>
+                        <figcaption>A wave-like offset applied with a ghosting effect</figcaption>
+                        </figure>
                     </div>
                 </div>
+                <hr>
                 <div class="project">
+                    <div class="info">
                     <h3>Weather ATM</h3>
                     <div class="made-with">
                         <svg class="icon"><use href="#js"></use></svg>
                     </div>
                     <a href="https://manschloemark.github.io/weather-atm">View Site</a>
                     <a href="https://github.com/manschloemark/weather-atm">View Repo</a>
+                    </div>
                     <p class="description">
-                        As part of The Odin Project's curriculum I made a web page that uses the <a href="https://openweathermap.org/api">OpenWeatherMap Weather API</a> to fetch the weather at a given place.
+                        As part of The Odin Project's curriculum I made a web page that uses the <a href="https://openweathermap.org/api">OpenWeatherMap Weather API</a> to fetch the weather of any location you enter.
                     </p>
                 </div>
+                <hr>
                 <div class="project">
-                    <h3>Ray Tracer</h3>
-                    <div class="made-with">
-                        <svg class="icon"><use href="#cpp"></use></svg>
+                    <div class="info">
+                        <h3>Ray Tracer</h3>
+                        <div class="made-with">
+                            <svg class="icon"><use href="#cpp"></use></svg>
+                        </div>
+                        <a href="https://github.com/manschloemark/weekend-raytracing">View Repo</a>
                     </div>
-                    <a href="https://github.com/manschloemark/weekend-raytracing">View Repo</a>
                     <p class="description">
-                        I read Peter Shirley's <a href="https://raytracing.github.io/">Ray Tracing in One Weekend</a> book series and wrote along with his example code.<br>
-                        I have also implemented some of my own features such as triangle rendering using the M&ouml;ller Trumbore algorithm and a few textures for fun.<br>
-                        Ray Tracing is one of my favorite things I've ever learned. How cool is it that you can draw imaginary scenes in 3D on a 2D screen with the math you learn in high school?
+                        I read Peter Shirley's <a href="https://raytracing.github.io/">Ray Tracing in One Weekend</a>
+                        book series and wrote along with his examples.<br>
+                        After finishing the books I added some new features on my own, such as parallelization, triangle rendering, command-line argument parsing, and textures.<br>
+                        Ray Tracing is one of the most interesting things I've learned. How cool is it that you can draw imaginary scenes in 3D on a 2D screen with the math you learn in high school?
+                        Note: this project was made in Linux and has a build.sh script to make compiling it more convenient. I don't think it will work in other OSes at the moment.
                     </p>
+                    <h4>Personal Additions</h4>
+                    <ul class="features">
+                        <li>Parallelized the program to significantly reduce render times</li>
+                        <li>Command-line argument parsing so I could change settings without recompiling</li>
+                        <li>Triangle rendering using the M&ouml;ller Trumbore algorithm</li>
+                        <li>Added various textures playing around with math and Perlin noise</li>
+                    </ul>
+                    <div class="examples">
+                        <figure>
+                            <img src="./images/shapes_and_materials.jpg" alt="A demo of spheres, triangles, rectangles, and rectangular prisms in various textures and materials."></img>
+                            <figcaption>A demo trying to fit all of the shapes, textures, and materials together</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./images/rockysurfacedemo.jpg" alt="An example of a texture I made, in 4 different scales."></img>
+                            <figcaption>A texture I made with Perlin noise and trig functions, at 4 different scales</figcaption>
+                        </figure>
+                        <figure>
+                        <img src="./images/solar.jpg" alt="A rendered scene of our solar system"></img>
+                        <figcaption>Our solar system rendered with my program, not quite to scale</figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </main>

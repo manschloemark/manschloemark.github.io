@@ -4,9 +4,9 @@
 	--faint-fg-color: #80bf9f;
 	--subtle-highlight-fg:#222222; 
 
-	--link-color: #637dc5;
+	--link-color: #e950a9;
 	--hovered-link-color: #246fda;
-	--visited-link-color: #e950a9;
+	--visited-link-color: #4e238e;
 	--void: #242424;
 }
 
@@ -32,7 +32,21 @@ header * {
 }
 
 div.project {
-	background-color: 
+	margin: 2em auto;
+}
+
+div.project div.info {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+div.project div.info * {
+	padding-right: 1em;
+}
+
+div.project div.info h3 {
+	margin-top: 0 auto;
 }
 
 
@@ -56,6 +70,6 @@ a:hover {
 	color: var(--hovered-link-color);
 }
 
-ul {
-	list-style: '> ';
+img {
+	width: 100%;
 }
