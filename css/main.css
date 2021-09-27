@@ -27,8 +27,18 @@ body {
 	padding: 0
 }
 
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
 header * {
 	margin: 0;
+}
+
+header div{
+	margin-left: 2em;
 }
 
 div#lists{
