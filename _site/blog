@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+DATE=$(date +%Y-%m-%d)
+FILENAME=./_posts/$DATE-$1.md
+touch $FILENAME
+echo "---" > $FILENAME
+echo "layout: blogpost" >> $FILENAME
+echo "author: mark" >> $FILENAME
+echo "---" >> $FILENAME
+vim $FILENAME

@@ -1,0 +1,139 @@
+:root {
+	--bg-color: #bac0d2;
+	--content-bg-color: #bac0d2;
+	--main-fg-color: #12100e;
+	--faint-fg-color: #80bf9f;
+	--subtle-highlight-fg:#543; 
+
+	--link-color: #145c9e;
+	--hovered-link-color: #246faa;
+	--visited-link-color: #832161;
+	--void: #242424;
+}
+
+a.icon-link {
+	height: 32px;
+	width: 32px;
+}
+.icon {
+	width: 32px; height: 32px;
+	fill: var(--subtle-highlight-fg);
+}
+
+body {
+	font-size: 18px;
+	font-family: "Noto Sans", "Arial", "Callibre";
+	height: 100%;
+	max-width: 860px;
+	background-color: var(--bg-color);
+	color: var(--main-fg-color);
+
+	margin: 2rem 2rem;
+	padding: 0
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header * {
+	margin: 0;
+}
+
+header div{
+	margin-left: 2em;
+}
+
+div#lists{
+	display: flex;
+	justify-content: space-between;
+}
+
+h4 span {
+	font-size: 0.8em;
+	font-style: italic;
+	font-weight: lighter;
+}
+
+p.detail {
+	color: var(--subtle-highlight-fg);
+	font-size: 1rem;
+	font-style: italic;
+}
+
+p.text-content {
+	color: var(--faint-fg-color);
+}
+
+nav a{
+	margin: 1em;
+}
+
+a, a .icon *{
+	color: var(--link-color);
+	fill: var(--link-color);
+}
+a:visited, a:visited .icon *{
+	color: var(--visited-link-color);
+	fill: var(--visited-link-color);
+}
+a:hover, a:hover .icon *{
+	color: var(--hovered-link-color);
+	fill: var(--hovered-link-color);
+}
+
+a.current-page {
+	color: var(--subtle-highlight-fg);
+}
+
+img {
+	width: 100%;
+}
+
+ul.contentlist {
+	list-style-type: none;
+}
+
+.contentlist .infobar {
+	display: flex;
+	align-items: center;
+}
+
+.infobar a {
+	text-decoration: none;
+}
+
+.infobar .date {
+	margin: 0 auto 0 1em;
+}
+
+.made-with {
+	margin-right: 1em;
+	height: 32px;
+}
+
+.contentlist li {
+	margin: 0;
+	padding: 0 1em 1em 1em;
+	border-radius: 0.5em;
+	background-color: var(--content-bg-color);
+}
+
+div.titlebar {
+	display: flex;
+	align-items: bottom;
+}
+
+div.titlebar a {
+	height: min-content;
+	margin: auto 0;
+}
+
+.brief {
+	margin-left: auto;
+	width: 40%;
+	font-style: italic;
+}
+

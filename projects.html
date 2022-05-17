@@ -1,0 +1,22 @@
+---
+title: Projects
+---
+{% include icons.html %}
+<h1>{{page.title}}</h1>
+<ul class="contentlist">
+	{% for project in site.projects %}
+	<li class="project">
+		<div class="infobar">
+			<div class="made-with">
+				{% for tech in project.made-with %}
+				<svg class="icon"><use href="#{{tech}}"></use></svg>
+				{% endfor %}
+			</div>
+			<h2> <a href="{{project.url}}">{{project.name}}</a></h2>
+			<p class="date">{{project.year}}</p>
+			<a class="icon-link" href="https://github.com/manschloemark/{{project.github}}.git"><svg class="icon"><use href="#github"/></svg></a></a>
+		</div>
+		<p>{{project.excerpt | markdownify}}</p>
+	</li>
+	{% endfor %}
+</ul>

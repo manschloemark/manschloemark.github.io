@@ -1,0 +1,10 @@
+---
+layout: default
+---
+{% include icons.html %}
+<div class="titlebar">
+    <h1>{{page.name}}</h1>
+    <a class="icon-link" href="https://github.com/manschloemark/{{page.github}}.git"><svg class="icon"><use href="#github"/></svg></a></a>
+    <p class="brief">{{page.brief}}</p>
+</div>
+{{content}}
